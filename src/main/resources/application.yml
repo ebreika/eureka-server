@@ -7,7 +7,5 @@ eureka:
     registryFetchIntervalSeconds: 30
     leaseRenewalIntervalInSeconds: 3
     leaseExpirationDurationInSeconds: 5
-  client:
-    registerWithEureka: false
-    fetchRegistry: false
+
 
