@@ -10,4 +10,14 @@ eureka:
     fetchRegistry: false
     serviceUrl:
       defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
-
+---
+spring:
+  profiles: peer
+eureka:
+  instance:
+    hostname: ${APP_NAME}.herokuapp.com
+  client:
+    registerWithEureka: true
+    fetchRegistry: true
+    serviceUrl:
+      defaultZone: ${EUREKA_PEER_URL}/eureka/
