@@ -3,9 +3,7 @@ server:
 
 eureka:
   instance:
-    hostname: localhost
+    hostname: ${DOMAIN:http://localhost}
   client:
     registerWithEureka: false
     fetchRegistry: false
-  server:
-    enableSelfPreservation: false
