@@ -3,7 +3,7 @@ server:
 
 eureka:
   instance:
-    hostname: ${DOMAIN:http://localhost}
+    hostname: ${DOMAIN:http://localhost1}
     registryFetchIntervalSeconds: 30
     leaseRenewalIntervalInSeconds: 3
     leaseExpirationDurationInSeconds: 5
