@@ -2,4 +2,22 @@ server:
   port: ${PORT:8761}
 
 
+eureka:
+  instance:
+    hostname: stark-gorge-70356.herokuapp.com
+    registryFetchIntervalSeconds: 30
+    leaseRenewalIntervalInSeconds: 3
+    leaseExpirationDurationInSeconds: 5
+  client:
+    registerWithEureka: true
+    fetchRegistry: true
+    healthcheck:
+      enabled: true
+    serviceUrl:
+      defaultZone: http://stark-gorge-70356.herokuapp.com/eureka/
+  server:
+    renewalPercentThreshold: 0.0
+    enableSelfPreservation: false
+    waitTimeInMsWhenSyncEmpty: 0
+
 
