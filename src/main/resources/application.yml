@@ -1,11 +1,5 @@
 server:
   port: ${PORT:8761}
 
-eureka:
-  instance:
-    hostname: stark-gorge-70356.herokuapp.com
-    registryFetchIntervalSeconds: 30
-    leaseRenewalIntervalInSeconds: 3
-    leaseExpirationDurationInSeconds: 5
 
 
